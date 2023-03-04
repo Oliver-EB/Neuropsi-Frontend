@@ -1,0 +1,42 @@
+body {
+  position:relative;
+
+  background-image: linear-gradient(to left, #FFFFFF, rgb(255, 122, 89));
+  width: 1500px;
+
+}
+
+.card-home{
+  position: relative;
+  top: 200px;
+  left:400px;
+  border: 1px solid black;
+  width: 500px;
+  height: 500px;
+  background-color: rgba(0, 234, 255, 0.1);
+}
+.card-title{
+  border-bottom: 1px solid black;
+}
+.title{
+  font-size: 30px;
+  position: relative;
+  left: 190px;
+  color: #000000;
+}
+.txt{
+  font-size: 20px;
+  color: #000000;
+  position: relative;
+  left: 150px;
+  display: grid;
+  grid-template-columns:auto;
+  padding: 50px;
+}
+button{
+  position: relative;
+  height: 50px;
+  width: 200px;
+  left: 150px;
+  background-color: white;
+}
