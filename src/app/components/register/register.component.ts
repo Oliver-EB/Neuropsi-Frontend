@@ -36,9 +36,9 @@ next:(res=>{
 Swal.fire({
   position :'top-end',
   icon: 'success',
-  title: 'Arantza te quiere',
+  title: 'Registro Exitoso',
   showConfirmButton:false,
-  timer:1500
+  timer:2500
 })
 this.userForm.reset();
 this.router.navigate(['dashboard']);
@@ -47,8 +47,8 @@ error: (err) => {
   Swal.fire({
     position :'top-end',
     icon: 'error',
-    title: 'Arantza no te quiere',
-    timer:1500
+    title: 'Ah ocurrido algo',
+    timer:2500
     })}
 })
 }else{

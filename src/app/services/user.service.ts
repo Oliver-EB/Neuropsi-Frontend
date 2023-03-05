@@ -17,17 +17,17 @@ let direccion = this.url + "users";
 return this.http.get<User[]>(direccion);
 }
 createUsers(user:User):Observable<User>{
-let direccion = this.url + "users";
+let direccion = this.url + "register";
   return this.http.post<User>(direccion, user);
 };
 
 updateUsers(from:User, id:any):Observable<User>{
-  let direccion = this.url + "users/" + id;
+  let direccion = this.url + "update" + id;
   return this.http.put<User>(direccion, from);
 }
 
 deleteUsers(from:User, id:any):Observable<User>{
-  let direccion = this.url + "users/" + id;
+  let direccion = this.url + "destroy" + id;
   return this.http.delete<User>(direccion);
 }
 
