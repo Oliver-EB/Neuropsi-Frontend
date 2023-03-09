@@ -9,6 +9,14 @@ import Swal from 'sweetalert2';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
+  username: string = ''
+  password: string = ''
 
+  login(){
+
+    //llamar a la api de los que hicieron el backend
+    console.log('Iniciando sesión con nombre de usuario:', this.username, 'y contraseña:', this.password);
+
+  }
 
 }
