@@ -13,7 +13,7 @@ url:string = "http://192.168.100.8:8000/api/"
   constructor(private  http:HttpClient) {
   }
 getAllUsers():Observable<User[]>{
-let direccion = this.url + "users";
+let direccion = this.url + "show";
 return this.http.get<User[]>(direccion);
 }
 createUsers(user:User):Observable<User>{
