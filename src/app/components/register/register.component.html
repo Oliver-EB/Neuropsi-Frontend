@@ -1,84 +1,88 @@
-<div class="outer">
-  <div class="container">
-      <div class="row">
-          <div class="offset-md-2 col-lg-5 col-md-7 offset-lg-4 offset-md-3">
-              <div class="panel border bg-white">
-                  <div class="panel-heading">
-                      <h3 class="pt-3 font-weight-bold">Registrate</h3>
-                  </div>
-                  <div class="panel-body p-3">
-                      <form [formGroup] = "userForm">
-                          <div class="form-group pt-3">
-                              <div class="input-field" [class.error]="userForm.controls['name_therapist'].dirty && userForm.hasError('required', 'name_therapist')">
-                                  <span class="fa fa-user p-2"></span>
-                                  <input formControlName="name_therapist" type="text" placeholder="name_therapist">
-                              </div>
-                              <br>
-                              <small
-                              *ngIf="userForm.controls['name_therapist'].dirty && userForm.hasError('required', 'name_therapist')"
-                              class="text-danger">El nombre es requerido</small>
-                              <div class="input-field" [class.error]="userForm.controls['app_therapist'].dirty && userForm.hasError('required', 'app_therapist')">
-                                  <span class="fa fa-user p-2"></span>
-                                  <input formControlName="app_therapist" type="text" placeholder="app_therapist">
-                              </div>
-                              <br>
-                              <small
-                                  *ngIf="userForm.controls['app_therapist'].dirty && userForm.hasError('required', 'app_therapist')"
-                                  class="text-danger">Apellido</small>
-                              <div class="input-field" [class.error]="userForm.controls['apm_therapist'].dirty && userForm.hasError('required', 'apm_therapist')">
-                                  <span class="fa fa-user p-2"></span>
-                                  <input formControlName="apm_therapist" type="text" placeholder="apm_therapist">
-                              </div>
-                              <br>
-                              <small
-                                  *ngIf="userForm.controls['apm_therapist'].dirty && userForm.hasError('required', 'apm_therapist')"
-                                  class="text-danger">Apellido</small>
-                              <div class="input-field" [class.error]="userForm.controls['specialty'].dirty && userForm.hasError('required', 'specialty')">
-                                  <span class="fa fa-user p-2"></span>
-                                  <input formControlName="specialty" type="text" placeholder="specialty">
-                              </div>
-                              <br>
-                              <small
-                                  *ngIf="userForm.controls['specialty'].dirty && userForm.hasError('required', 'specialty')"
-                                  class="text-danger">Especialidad</small>
-                              <div class="input-field" [class.error]="userForm.controls['user_name'].dirty && userForm.hasError('required', 'user_name')">
-                                  <span class="fa fa-user p-2"></span>
-                                  <input formControlName="user_name" type="text" placeholder="user_name">
-                              </div>
-                              <br>
-                              <small
-                              *ngIf="userForm.controls['user_name'].dirty && userForm.hasError('required', 'user_name')"
-                              class="text-danger">Usuario</small>
-                              <div class="input-field" [class.error]="userForm.controls['phone'].dirty && userForm.hasError('required', 'phone')">
-                                  <span class="fa fa-user p-2"></span>
-                                  <input formControlName="phone" type="text" placeholder="phone">
-                              </div>
-                              <br>
-                              <small
-                              *ngIf="userForm.controls['phone'].dirty && userForm.hasError('required', 'phone')"
-                              class="text-danger">Telefono</small>
-                              <div class="input-field" [class.error]="userForm.controls['password'].dirty && userForm.hasError('required', 'password')">
-                                  <span class="fa fa-user p-2"></span>
-                                  <input formControlName="password" type="text" placeholder="password">
-                              </div>
-                              <br>
-                              <small
-                                  *ngIf="userForm.controls['password'].dirty && userForm.hasError('required', 'password')"
-                                  class="text-danger">Contraseña</small>
-                              <div class="input-field" [class.error]="userForm.controls['professional_license'].dirty && userForm.hasError('required', 'professional_license')">
-                                  <span class="fa fa-user p-2"></span>
-                                  <input formControlName="professional_license" type="text" placeholder="professional_license">
-                              </div>
-                              <br>
-                              <small
-                                  *ngIf="userForm.controls['professional_license'].dirty && userForm.hasError('required', 'professional_license')"
-                                  class="text-danger">Licencia</small>
-                          </div>
-                          <button (click)="onCreateUser()" type="submit" class="btn btn-primary btn-block mt-4 w-100">Registrarme</button>
-                      </form>
-                  </div>
-              </div>
-          </div>
-      </div>
+<body>
+  <div class="outer">
+    <div class="container">
+        <div class="row">
+            <div class="offset-md-2 col-lg-5 col-md-7 offset-lg-4 offset-md-3">
+                <div class="panel border bg-white">
+                    <div class="panel-heading">
+                        <h3 class="pt-3 font-weight-bold">Registrate</h3>
+                    </div>
+                    <div class="panel-body p-3">
+                        <form [formGroup] = "userForm">
+                            <div class="form-group pt-3">
+                                <div class="input-field" [class.error]="userForm.controls['name_therapist'].dirty && userForm.hasError('required', 'name_therapist')">
+                                    <span class="fa fa-user p-2"></span>
+                                    <input formControlName="name_therapist" type="text" placeholder="name_therapist">
+                                </div>
+                                <br>
+                                <small
+                                *ngIf="userForm.controls['name_therapist'].dirty && userForm.hasError('required', 'name_therapist')"
+                                class="text-danger">El nombre es requerido</small>
+                                <div class="input-field" [class.error]="userForm.controls['app_therapist'].dirty && userForm.hasError('required', 'app_therapist')">
+                                    <span class="fa fa-user p-2"></span>
+                                    <input formControlName="app_therapist" type="text" placeholder="app_therapist">
+                                </div>
+                                <br>
+                                <small
+                                    *ngIf="userForm.controls['app_therapist'].dirty && userForm.hasError('required', 'app_therapist')"
+                                    class="text-danger">Apellido</small>
+                                <div class="input-field" [class.error]="userForm.controls['apm_therapist'].dirty && userForm.hasError('required', 'apm_therapist')">
+                                    <span class="fa fa-user p-2"></span>
+                                    <input formControlName="apm_therapist" type="text" placeholder="apm_therapist">
+                                </div>
+                                <br>
+                                <small
+                                    *ngIf="userForm.controls['apm_therapist'].dirty && userForm.hasError('required', 'apm_therapist')"
+                                    class="text-danger">Apellido</small>
+                                <div class="input-field" [class.error]="userForm.controls['specialty'].dirty && userForm.hasError('required', 'specialty')">
+                                    <span class="fa fa-user p-2"></span>
+                                    <input formControlName="specialty" type="text" placeholder="specialty">
+                                </div>
+                                <br>
+                                <small
+                                    *ngIf="userForm.controls['specialty'].dirty && userForm.hasError('required', 'specialty')"
+                                    class="text-danger">Especialidad</small>
+                                <div class="input-field" [class.error]="userForm.controls['user_name'].dirty && userForm.hasError('required', 'user_name')">
+                                    <span class="fa fa-user p-2"></span>
+                                    <input formControlName="user_name" type="text" placeholder="user_name">
+                                </div>
+                                <br>
+                                <small
+                                *ngIf="userForm.controls['user_name'].dirty && userForm.hasError('required', 'user_name')"
+                                class="text-danger">Usuario</small>
+                                <div class="input-field" [class.error]="userForm.controls['phone'].dirty && userForm.hasError('required', 'phone')">
+                                    <span class="fa fa-user p-2"></span>
+                                    <input formControlName="phone" type="text" placeholder="phone">
+                                </div>
+                                <br>
+                                <small
+                                *ngIf="userForm.controls['phone'].dirty && userForm.hasError('required', 'phone')"
+                                class="text-danger">Telefono</small>
+                                <div class="input-field" [class.error]="userForm.controls['password'].dirty && userForm.hasError('required', 'password')">
+                                    <span class="fa fa-user p-2"></span>
+                                    <input formControlName="password" type="text" placeholder="password">
+                                </div>
+                                <br>
+                                <small
+                                    *ngIf="userForm.controls['password'].dirty && userForm.hasError('required', 'password')"
+                                    class="text-danger">Contraseña</small>
+                                <div class="input-field" [class.error]="userForm.controls['professional_license'].dirty && userForm.hasError('required', 'professional_license')">
+                                    <span class="fa fa-user p-2"></span>
+                                    <input formControlName="professional_license" type="text" placeholder="professional_license">
+                                </div>
+                                <br>
+                                <small
+                                    *ngIf="userForm.controls['professional_license'].dirty && userForm.hasError('required', 'professional_license')"
+                                    class="text-danger">Licencia</small>
+                            </div>
+                            <button (click)="onCreateUser()" type="submit" class="btn btn-primary btn-block mt-4 w-100">Registrarme</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
   </div>
-</div>
+  
+
+</body>
