@@ -1,0 +1,73 @@
+<h2 class="text-center text-2xl">Nueva New Therapist</h2>
+<div class="w-full max-w-xs m-auto">
+  <form #userForm="ngForm" (ngSubmit)="submitForm(userForm)"  class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+    <input type="text" name="id" [(ngModel)]="userService.selectUser.id">
+    <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2">
+        Name therapist
+      </label>
+      <input [(ngModel)]="userService.selectUser.name_therapist" name="name_therapist" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name_therapist" type="text" placeholder="Name">
+    </div>
+    
+    <div class="mb-6">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="app_therapist">
+        App therapist
+      </label>
+      <input [(ngModel)]="userService.selectUser.app_therapist" name="app_therapist" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="app_therapist" type="text" placeholder="App therapist">
+    </div>
+
+    <div class="mb-6">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="apm_therapist">
+        Apm therapist
+      </label>
+      <input [(ngModel)]="userService.selectUser.apm_therapist" name="apm_therapist" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="apm_therapist" type="text" placeholder="Apm therapist">
+    </div>
+
+    <div class="mb-6">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="specialty">
+        Specialty
+        </label>
+      <input [(ngModel)]="userService.selectUser.specialty" name="specialty" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="specialty" type="text" placeholder="Specialty">
+    </div>
+
+    <div class="mb-6">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="user_name">
+        User name
+        </label>
+      <input [(ngModel)]="userService.selectUser.user_name" name="user_name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="user_name" type="text" placeholder="User name">
+    </div>
+
+    <div class="mb-6">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="phone">
+        Phone
+         </label>
+      <input [(ngModel)]="userService.selectUser.phone" name="phone" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="phone" type="text" placeholder="Phone">
+    </div>
+
+    <div class="mb-6">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+        Password
+         </label>
+      <input [(ngModel)]="userService.selectUser.password" name="password" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="password" type="text" placeholder="Password">
+    </div>
+
+    <div class="mb-6">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="professional_license">
+        Professional license
+         </label>
+      <input [(ngModel)]="userService.selectUser.professional_license" name="professional_license" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="password" type="text" placeholder="slug">
+    </div>
+
+    <div class="flex items-center justify-between">
+      <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+        Guardar
+      </button>
+      <a routerLink="/" class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800">
+        Regresar
+      </a>
+    </div>
+  </form>
+  <p class="text-center text-gray-500 text-xs">
+    &copy;2020 Acme Corp. All rights reserved.
+  </p>
+</div>

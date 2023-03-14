@@ -8,3 +8,6 @@
   background-position-y:center;
   background-position-x:left;
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

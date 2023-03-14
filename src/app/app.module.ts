@@ -9,6 +9,10 @@ import { UserService } from './services/user.service';
 import { HomeComponent } from './components/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+
+import { AddUserComponent } from './components/user/add-user/add-user.component';
+import { EditUserComponent } from './components/user/edit-user/edit-user.component';
+import { ListUserComponent } from './components/user/list-user/list-user.component';
 UserService
 
 @NgModule({
@@ -17,7 +21,10 @@ UserService
     LoginComponent,
     RegisterComponent,
     HomeComponent,
-    DashboardComponent
+    DashboardComponent,
+    EditUserComponent,
+    AddUserComponent,
+    ListUserComponent,
   ],
   imports: [
     BrowserModule,
